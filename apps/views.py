@@ -52,7 +52,9 @@ def imageUploadView(request):
 class AppViewset(viewsets.ModelViewSet):
     '''
     in this viewset only admin can create the data.Normal User can not create the data.He can only view the data.
-    This singly view can act dynamically between admin and normal user
+    This singly view can act dynamically between admin and normal use.
+    It supports both basic and token authentication
+    
     '''
     authentication_classes = [TokenAuthentication,BasicAuthentication]
     permission_classes=[CustomAdminPermission|ReadOnly]
