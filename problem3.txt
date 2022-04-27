@@ -1,0 +1,15 @@
+B)Django and Flask are most popular 2 python based we frameworks.They Do the same job but in different senarios,
+1)Django is used in very complex web applications
+2)Django is used for rapid development
+
+
+Flask is a micro framework.You can build complex applications too in flask but it takes loot of time
+1)Flask supports non-relational databases whereas django does not
+2)Flask is mostly used for very simple applications like deploying the machine learning models
+
+
+
+A)Celery is the most effective way of doing scheduling things because it is very easy to use and asynchronous in nature
+For Periodic tasks we can repeat at any interval of time
+Best for distributed message passing
+
