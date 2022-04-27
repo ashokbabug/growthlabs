@@ -5,6 +5,7 @@ from django.contrib import messages
 # Create your views here.
 @login_required
 def profile(request):
+    '''this view is for profile updation'''
     u_form = UserUpdateForm()
     if request.method == 'POST':
         u_form = UserUpdateForm(request.POST,instance=request.user)  #to get our information already filled in
@@ -20,6 +21,8 @@ def profile(request):
 
 
 def register(request):
+    '''This view is for registering the new user.
+    It accepts a post request'''
     if request.method=='POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():
